@@ -1,0 +1,35 @@
+
+@mixin img-french { background:  url(../img/french_menu.jpg);
+                    padding-top: 510px;
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    width: 100%;
+                    height: 600px;
+}
+
+
+@mixin img-delice { background:  url(../img/delice_menu.jpg);
+                    padding-top: 510px;
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    width: 100%;
+                    height: 600px;
+}
+
+
+@mixin img-palette { background:  url(../img/palette_menu.jpg);
+                     padding-top: 510px;
+                     background-repeat: no-repeat; 
+                     background-size: cover; 
+                     width: 100%;
+                     height: 600px;
+}
+
+
+@mixin img-note { background:  url(../img/note_menu.jpg) 80%;
+                  padding-top: 510px;
+                  background-repeat: no-repeat; 
+                  background-size: cover; 
+                  width: 100%;
+                  height: 600px;
+}
