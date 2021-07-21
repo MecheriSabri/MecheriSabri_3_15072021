@@ -5,7 +5,11 @@
 
 @import "./utils/mixins";
 
+svg {margin:0; padding:0;}
+
 * { box-sizing: border-box; }
+
+a {text-decoration:none ;}
 
 html, body {margin: 0; padding: 0;}
 
@@ -47,38 +51,67 @@ header {    width: 100%;
 
 .headings { display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-         
+            grid-template-rows: 90%;
+            margin-bottom:5%;
+            padding:0;
+            height:200px;
+            
 
             .headings__titles { 
-                font-family: 'Shrikhand', cursive; 
-                font-size: 55px;
+                font-family: $font-shrikhand; 
                 grid-column-start: 1;
                 grid-column-end: 4;
-                font-size: 60px;
+                font-size: 60px; 
+                
             }
 
-            .headings__heart {  
+            .headings__heart--gradient {  
                 
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
                 grid-column-start: 4;
-                grid-column-end: 5;}
+                grid-column-end: 5;
+                padding:0;
+                grid-row-start: 1;
+                grid-row-end:2; 
+                
+                
+                
+            }
+
+            .headings__heart {display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end:2; 
+                svg#Capa_1 {    height:80px;
+                                stroke:black; 
+                                stroke-width: 25px;
+                                transition:opacity 400ms, transform 350ms;
+
+                                &:hover {opacity:0; transform:scale(0.9)}} 
+                            }
+                
+            
         }
 
 
-.div-content-menus{ display: grid; }
+.div-content-menus{ display: grid;
+                    grid-gap:90px; }
                     
 
 .sections-menus{    display: grid;
                     grid-gap: 40px;
                     width: 100%;
-                    font-family: 'Roboto', sans-serif;
-                    margin-top:10%
+                    
+                    
 }
 
-.meal-timeline-titles { font-size:43px; font-weight: 0;
-                     span { border-bottom: $color-tertiary solid 3px; padding-bottom:10px; } 
+.meal-timeline-titles { font-size: 43px; font-weight: 0; margin-bottom: 2%;
+                     span { border-bottom: $color-tertiary solid 7px; padding-bottom:10px; } 
                         } 
 
 
@@ -90,33 +123,37 @@ header {    width: 100%;
             display: flex; 
             justify-content: flex-end; 
             width: 100%; 
+            box-shadow: 1px 1px 15px;
             
 .dishes__content {  width: 100%;
                     display: flex; 
                     align-items: flex-end; 
                     justify-content: space-between; 
                     padding: 3% 5% 3% 3%; 
-                    &:hover + .div-logo {   width: 100px; display: flex; opacity: 0.8; background: $color-tertiary;
-                        & > i.logo {    opacity: 1; transform: rotate(0deg); }     }
+                    &:hover + .div-logo {   width: 150px; 
+                                            display: flex; 
+                                            opacity: 0.8; 
+                                            background: $color-tertiary;
+                                            
+                        & > i.logo {    opacity: 1; transform: rotate(0deg); }     
+                                        }
 
                     .title-description { 	display: flex; 
                                             flex-direction: column; 
-                                            white-space: nowrap; 
-                                            overflow: hidden;
+                                            
+                                            
 
                         h3 {font-size: 43px;
-                            margin:0; 
-                            overflow: hidden;
-                            text-overflow: ellipsis; 
-                            white-space: nowrap; }
+                            margin:0;  }
                         
-                        .dishes-description {   font-size: 41px;  
-                                                font-weight: normal; 
-                                                margin:1.5% 0 0 0;}
+                        .dishes-description {   font-weight: normal; 
+                                                margin:1.5% 0 0 0; }
 
                               }
             
-            .price {margin:0; font-weight: bold; font-size: 40px;}
+                        .price {margin:0; 
+                                font-weight: bold; 
+                                font-size: 39px;}
 
             
 
@@ -124,13 +161,12 @@ header {    width: 100%;
 .div-logo { align-items: center; 
             justify-content: center;
             display: flex;
-            text-align: center;
             width: 0;
             margin: 0;
             border-radius: 0 20px 20px 0 ;
             transition: 0.6s;
 
-             &:hover {   width: 100px; 
+             &:hover {  width: 150px; 
                         display: flex; 
                         opacity: 0.8;  
                         background: $color-tertiary; }
@@ -152,12 +188,12 @@ header {    width: 100%;
 .div-button {   display:flex;
                 justify-content: center;
                 align-items: center;
-                height:300px;
+                height:350px;
                 
                 
             
-                Button {    width: 45%; 
-                            height:100px; 
+                Button {    width: 50%; 
+                            height:110px; 
                             border-radius: 65px; 
                             color:white; 
                             background: linear-gradient($color-secondary, $color-primary); 
@@ -173,4 +209,28 @@ header {    width: 100%;
 
 }
 
-footer {background:$color-footer; color:white; padding:5% 0% 5% 6%;}
+footer {    background:$color-footer; 
+            color:white; 
+            padding:7% 0% 6% 8%;
+
+            .footer__heading {  margin-bottom: 7%;
+                                
+
+            a{    font-family: $font-shrikhand;
+                                font-weight: 0;
+                                font-size: 43px; 
+                                color:white;}
+                        }
+
+            div {   display: flex;
+                    align-items: center;
+                    margin-bottom: 3%;
+                    
+                    i+p {margin-left:50px;}
+                    .footer__logo--hands+p {margin-left:33px;}
+                
+            }         
+                
+            p { margin:0;
+                }          
+         }
