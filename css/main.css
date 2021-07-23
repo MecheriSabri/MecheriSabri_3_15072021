@@ -41,6 +41,9 @@ header .header__arrow {
 
 header img {
   width: 100%;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 header svg {
@@ -94,9 +97,9 @@ header svg {
 }
 
 .div-content {
-  padding: 0 5%;
   border-radius: 95px 95px 0 0;
   width: 100%;
+  padding: 0 5%;
   background: #f2f2f2;
 }
 
@@ -223,6 +226,8 @@ header svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3% 5% 3% 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dishes .dishes__content:hover + .div-logo {
@@ -324,7 +329,7 @@ header svg {
 }
 
 .div-button Button {
-  width: 50%;
+  width: 45%;
   height: 110px;
   border-radius: 65px;
   color: white;
@@ -376,5 +381,105 @@ footer div .footer__logo--hands + p {
 
 footer p {
   margin: 0;
+}
+
+.main-home {
+  width: 100%;
+}
+
+.main-home form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 400px 1fr;
+      grid-template-columns: 1fr 400px 1fr;
+  -webkit-box-shadow: inset 0px 1px 2px 0px;
+          box-shadow: inset 0px 1px 2px 0px;
+  height: 70px;
+  background: #DCDCDC;
+}
+
+.main-home form input {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  width: 90%;
+  margin: 2.5px auto 0 auto;
+  border: none;
+  background: #DCDCDC;
+}
+
+.main-home form input:focus {
+  border: none;
+}
+
+.main-home form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+  font-size: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.main-home .heading_page {
+  width: 100%;
+  text-align: center;
+  padding: 8%;
+  background: #f2f2f2;
+}
+
+.main-home .heading_page h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.main-home .heading_page p {
+  margin: 0;
+  font-size: 40px;
+}
+
+.main-home .heading_page button {
+  width: 65%;
+}
+
+.main-home .section-filters {
+  width: 100%;
+  padding: 0 5%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+}
+
+.main-home .section-restaurants {
+  width: 100%;
+  padding: 0 5%;
+  background: #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
 }
 /*# sourceMappingURL=main.css.map */
