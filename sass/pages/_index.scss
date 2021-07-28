@@ -1,10 +1,12 @@
+
+
 .main-home { width:100%;
 
     form {  display: grid;
             grid-template-columns: 1fr 400px 1fr;
             box-shadow: inset 0px 1px 2px 0px;
             height: 70px;
-            background: #DCDCDC ;
+            background: #e2e2e2 ;
     
     
     
@@ -15,7 +17,7 @@
             width:90%;
             margin:2.5px auto 0 auto;
             border:none;
-            background: #DCDCDC;
+            background: #e2e2e2;
 
             &:focus {border:none;}
 
@@ -53,7 +55,17 @@
 .section-filters {  @include rules-styles(white);
                     display:flex;
                     flex-direction: column;
-                    justify-content: center;font-size:50px;
+                    justify-content: center;
+                    font-size:50px;
+
+                    .content-filters {  width:100%;
+                                        display:flex;
+                                        flex-direction: column;
+
+                                        .filter {   display:flex; 
+                                                    align-items: center;
+                                                    }
+                    }
 
 } 
 

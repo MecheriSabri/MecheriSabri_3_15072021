@@ -5,6 +5,8 @@
 
 @import "./utils/mixins";
 
+
+
 svg {margin:0; padding:0;}
 
 * { box-sizing: border-box; }
@@ -84,6 +86,7 @@ header {    width: 100%;
                 grid-column-end: 5;
                 grid-row-start: 1;
                 grid-row-end:2; 
+
                 svg#Capa_1 {    height:80px;
                                 stroke:black; 
                                 stroke-width: 25px;
@@ -107,13 +110,80 @@ header {    width: 100%;
                     
 }
 
-.meal-timeline-titles { font-size: 43px; font-weight: 0; margin-bottom: 2%;
-                     span { border-bottom: $color-tertiary solid 7px; padding-bottom:10px; } 
+.meal-timeline-titles { font-size: 43px; 
+                        font-weight: 0; 
+                        margin-bottom: 2%;
+
+                        span {  border-bottom: $color-tertiary solid 7px; 
+                                padding-bottom:10px; } 
                         } 
 
 
 
 // Dishes Case
+
+
+	       
+              
+.dish-animation1 { 
+    -webkit-animation: slide-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity:0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity:1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity:0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            opacity:1;
+            
+  }
+  
+}
+
+.dish-animation2 {-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    @-webkit-keyframes fade-in-bottom {
+        0% {
+          -webkit-transform: translateY(50px);
+                  transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in-bottom {
+        0% {
+          -webkit-transform: translateY(50px);
+                  transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          opacity: 1;
+        }
+      }}
+
 
 .dishes {   background: white; 
             border-radius: 20px; 
@@ -121,33 +191,68 @@ header {    width: 100%;
             justify-content: flex-end; 
             width: 100%; 
             box-shadow: 1px 1px 15px;
+            white-space: nowrap;
+            
+            
+            
+            
+            
+            
+            
             
 .dishes__content {  width: 100%;
                     display: flex; 
                     align-items: flex-end; 
                     justify-content: space-between; 
-                    padding: 3% 5% 3% 3%; 
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+                    padding: 3% 5% 3% 3%;
+                    backface-visibility : hidden;
+                      
                     
-                    &:hover + .div-logo {   width: 150px; 
-                                            display: flex; 
+                   
+                
+                    
+                    
+                    &:hover + .div-logo {   width: 150px;  
                                             opacity: 0.8; 
                                             background: $color-tertiary;
                                             
                         & > i.logo {    opacity: 1; transform: rotate(0deg); }     
                                         }
 
-                    .title-description { 	display: flex; 
-                                            flex-direction: column; 
+
+                                        &:hover > .title-description > .dishes-description {transform-origin:100% right; width:95%;}
+                                        &:hover > .title-description > h3 {transform-origin:100% right; width:90%;}
+                 
+                    .title-description {  display: flex; 
+                                          flex-direction: column; 
+                                          width: 90%;
+                                          border:solid;
+                                
+                                         
+                                          
+                                          
+                                          
+                                          
                                             
                                             
 
-                        h3 {font-size: 43px;
-                            margin:0;  }
+                        h3 {font-size: 40px;
+                            margin:0;  
+                            width:100%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                                border:solid;}
+                        
                         
                         .dishes-description {   font-weight: normal; 
-                                                margin:1.5% 0 0 0; }
+                                                margin:5px 0 0 0; 
+                                                text-overflow: ellipsis;
+                                                overflow: hidden;
+                                                border:solid;
+                                                width: 100%;
+                                                }
+                       
+
 
                               }
             
@@ -163,8 +268,10 @@ header {    width: 100%;
             display: flex;
             width: 0;
             margin: 0;
-            border-radius: 0 20px 20px 0 ;
+            border-radius: 0 20px 20px 0;
             transition: 0.6s;
+            display: flex;
+            
 
              &:hover {  width: 150px; 
                         display: flex; 

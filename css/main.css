@@ -200,6 +200,68 @@ header svg {
   padding-bottom: 10px;
 }
 
+.dish-animation1 {
+  -webkit-animation: slide-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.dish-animation2 {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: fade-in-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .dishes {
   background: white;
   border-radius: 20px;
@@ -212,6 +274,7 @@ header svg {
   width: 100%;
   -webkit-box-shadow: 1px 1px 15px;
           box-shadow: 1px 1px 15px;
+  white-space: nowrap;
 }
 
 .dishes .dishes__content {
@@ -226,15 +289,12 @@ header svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3% 5% 3% 3%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .dishes .dishes__content:hover + .div-logo {
   width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   opacity: 0.8;
   background: #99E2D0;
 }
@@ -245,6 +305,18 @@ header svg {
           transform: rotate(0deg);
 }
 
+.dishes .dishes__content:hover > .title-description > .dishes-description {
+  -webkit-transform-origin: 100% right;
+          transform-origin: 100% right;
+  width: 95%;
+}
+
+.dishes .dishes__content:hover > .title-description > h3 {
+  -webkit-transform-origin: 100% right;
+          transform-origin: 100% right;
+  width: 90%;
+}
+
 .dishes .dishes__content .title-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,16 +325,26 @@ header svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
+  border: solid;
 }
 
 .dishes .dishes__content .title-description h3 {
-  font-size: 43px;
+  font-size: 40px;
   margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: solid;
 }
 
 .dishes .dishes__content .title-description .dishes-description {
   font-weight: normal;
-  margin: 1.5% 0 0 0;
+  margin: 5px 0 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: solid;
+  width: 100%;
 }
 
 .dishes .dishes__content .price {
@@ -286,6 +368,7 @@ header svg {
   border-radius: 0 20px 20px 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  display: flex;
 }
 
 .dishes .div-logo:hover {
@@ -395,7 +478,7 @@ footer p {
   -webkit-box-shadow: inset 0px 1px 2px 0px;
           box-shadow: inset 0px 1px 2px 0px;
   height: 70px;
-  background: #DCDCDC;
+  background: #e2e2e2;
 }
 
 .main-home form input {
@@ -408,7 +491,7 @@ footer p {
   width: 90%;
   margin: 2.5px auto 0 auto;
   border: none;
-  background: #DCDCDC;
+  background: #e2e2e2;
 }
 
 .main-home form input:focus {
@@ -471,6 +554,26 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
+}
+
+.main-home .section-filters .content-filters {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-home .section-filters .content-filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-home .section-restaurants {
