@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="index-html" lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	
@@ -9,20 +10,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
-	<!-- font Roboto -->
+
+	<!-- font Roboto bold-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<title>ohmyfood - Accueil</title>
 </head>
 
-<body>
-    <header>
+<body class="body-home">
+<div class="loading-veil"></div>    
 
-		<img src="img/ohmyfoodlogo.svg" alt="logo ohmyfood">
+    <header>
+		
+		<a class="header__ohmyfood" href="index.html"><img src="img/ohmyfoodlogo.svg" alt="logo ohmyfood"></a>
 
 	</header>
+    <div class="chargement"><i class="fas fa-concierge-bell"></i></div>
 
     <main class="main-home">
+    
         
             <form>
        
@@ -47,33 +53,209 @@
 
             
                 <section class="section-filters">
-                    <h2>Fonctionnement</h2>
+                    <h2 class="title">Fonctionnement</h2>
                     
                     <div class="content-filters">
+
                         <div class="filter">
                             <div class="filter__number">1</div>
-                            <i class="fas fa-mobile-alt logo"></i>
-                            <p>Choisissez un restaurant</p>
+                            <div class="filter__logo-text">
+                            <div class="filter__content-logo">
+                                <i class="fas fa-mobile-alt logo"></i>
+                            </div>
+                                <p>Choisissez un restaurant</p>
+                            </div>
                         </div>
+
                         <div class="filter">
                             <div class="filter__number">2</div>
-                            <i class="fas fa-list-ul logo"></i>
-                            <p>Composez votre menu</p>
+                            <div class="filter__logo-text">
+                            <div class="filter__content-logo">
+                                <i class="fas fa-list-ul logo"></i>
+                            </div>
+                                <p>Composez votre menu</p>
+                            </div>
                         </div>
+
                         <div class="filter">
                             <div class="filter__number">3</div>
-                            <i class="fas fa-store logo"></i>
-                            <p>Dégustez au restaurant</p>
+                            <div class="filter__logo-text">
+                            <div class="filter__content-logo">
+                                <i class="fas fa-store logo"></i>
+                            </div>
+                                <p>Dégustez au restaurant</p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="section-restaurants">
-                    <h2>Restaurants</h2>
-                    <a href="palettedugout.html">La palette du goût</a>
-                    <a href="lanote.html">La note enchantée</a>
-                    <a href="francaise.html">À la française</a>
-                    <a href="delicedessens.html">Le délice des sens</a>
+                    <h2 class="title">Restaurants</h2>
+                    
+                    <div class="section-restaurants__content">
+                        <article>  
+                            <a href="palettedugout.html">
+                            
+                               <p class="new">Nouveau</p>
+                               <img src="img/palette_menu.jpg" alt=""> 
+                                <div class="announces">
+                                    <div>
+                                        <h3  class="announces__description">La palette du goût</h3>
+                                        <p class="announces__description">Ménilmontant</p>
+                                    </div>
+
+                                    <div class="announces__heart">
+                                            <svg version="1.1" class="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
+                                
+                                                <defs><linearGradient id="linearGradient1704">
+                                                <stop style="stop-color:#ff79da;stop-opacity:1" offset="0" />
+                                                <stop style="stop-color:#9356dc;stop-opacity:1" offset="1" /></linearGradient>
+                                                <linearGradient	xlink:href="#linearGradient1704" x1="210.70769" y1="425.35385" x2="512.98462" y2="1.9692308" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.99921875,0,0,0.99889381,0,0.03318585)" /></defs>
+                                                <path d="M 375.70624,30 C 347.94496,30 322.49284,38.79426 300.0584,56.139055 278.5502,72.76764 264.2304,93.947185 255.8,109.34815 247.3696,93.946185 233.0498,72.76764 211.5416,56.139055 189.10716,38.79426 163.65504,30 135.89376,30 58.42232,30 0,93.34685 0,177.3508 c 0,90.7535 72.886012,152.84575 183.22576,246.84465 18.73732,15.96335 39.97572,34.0573 62.05048,53.3549 2.90972,2.5472 6.6468,3.94965 10.52376,3.94965 3.87696,0 7.61404,-1.40245 10.52376,-3.94865 22.07676,-19.3006 43.31416,-37.39355 62.06248,-53.3659 C 438.714,330.19655 511.6,268.1043 511.6,177.3508 511.6,93.34685 453.17768,30 375.70624,30 Z" style="fill:url(#linearGradient1706);fill-opacity:1;stroke-width:0.999053" />
+                                        
+                                            </svg>
+                                    </div>
+
+                                    <div class="announces__heart">
+                                            <svg	version="1.1" class="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox=" -12  0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
+                                                    xml:space="preserve">
+                                                <g>
+                                                    <path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801
+                                                            C0,67.584,54.202,29.761,121.041,29.761c40.262,0,75.827,19.745,97.841,49.976C240.899,49.506,276.47,29.761,316.722,29.761z"/>
+                                                </g>
+
+                                            </svg>
+
+                                    </div>
+                                </div>
+
+                            </a>
+                       </article>
+
+                       <article>  
+                        <a href="lanote.html ">
+                        
+                            <p class="new">Nouveau</p>
+                           <img class="modif" src="img/note_menu.jpg" alt=""> 
+                           <div class="announces">
+                            <div>
+                                <h3 class="announces__description">La note enchantée</h3>
+                                <p class="announces__description">Charonne</p>
+                            </div>
+
+                            <div class="announces__heart">
+                                    <svg version="1.1" class="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
+                        
+                                        <defs><linearGradient>
+                                        <stop style="stop-color:#ff79da;stop-opacity:1" offset="0"/>
+                                        <stop style="stop-color:#9356dc;stop-opacity:1" offset="1"/></linearGradient>
+                                        <linearGradient	xlink:href="#linearGradient1704" x1="210.70769" y1="425.35385" x2="512.98462" y2="1.9692308" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.99921875,0,0,0.99889381,0,0.03318585)" /></defs>
+                                        <path d="M 375.70624,30 C 347.94496,30 322.49284,38.79426 300.0584,56.139055 278.5502,72.76764 264.2304,93.947185 255.8,109.34815 247.3696,93.946185 233.0498,72.76764 211.5416,56.139055 189.10716,38.79426 163.65504,30 135.89376,30 58.42232,30 0,93.34685 0,177.3508 c 0,90.7535 72.886012,152.84575 183.22576,246.84465 18.73732,15.96335 39.97572,34.0573 62.05048,53.3549 2.90972,2.5472 6.6468,3.94965 10.52376,3.94965 3.87696,0 7.61404,-1.40245 10.52376,-3.94865 22.07676,-19.3006 43.31416,-37.39355 62.06248,-53.3659 C 438.714,330.19655 511.6,268.1043 511.6,177.3508 511.6,93.34685 453.17768,30 375.70624,30 Z" style="fill:url(#linearGradient1706);fill-opacity:1;stroke-width:0.999053" />
+                                
+                                    </svg>
+                            </div>
+
+                            <div class="announces__heart">
+                                    <svg	version="1.1" class="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox=" -12  0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
+                                            xml:space="preserve">
+                                        <g>
+                                            <path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801
+                                                    C0,67.584,54.202,29.761,121.041,29.761c40.262,0,75.827,19.745,97.841,49.976C240.899,49.506,276.47,29.761,316.722,29.761z"/>
+                                        </g>
+
+                                    </svg>
+
+                            </div>
+                    </div>
+
+                          
+
+                        </a>
+                   </article>
+
+                   <article>  
+                    <a href="francaise.html">
+                    
+
+                       <img src="img/french_menu.jpg" alt=""> 
+                       <div class="announces">
+                        <div>
+                            <h3 class="announces__description">À la française</h3>
+                            <p class="announces__description">Cité Rouge</p>
+                        </div>
+
+                        <div class="announces__heart">
+                                <svg version="1.1" class="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
+                    
+                                    <defs><linearGradient>
+                                    <stop style="stop-color:#ff79da;stop-opacity:1" offset="0"/>
+                                    <stop style="stop-color:#9356dc;stop-opacity:1" offset="1"/></linearGradient>
+                                    <linearGradient	xlink:href="#linearGradient1704" x1="210.70769" y1="425.35385" x2="512.98462" y2="1.9692308" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.99921875,0,0,0.99889381,0,0.03318585)" /></defs>
+                                    <path d="M 375.70624,30 C 347.94496,30 322.49284,38.79426 300.0584,56.139055 278.5502,72.76764 264.2304,93.947185 255.8,109.34815 247.3696,93.946185 233.0498,72.76764 211.5416,56.139055 189.10716,38.79426 163.65504,30 135.89376,30 58.42232,30 0,93.34685 0,177.3508 c 0,90.7535 72.886012,152.84575 183.22576,246.84465 18.73732,15.96335 39.97572,34.0573 62.05048,53.3549 2.90972,2.5472 6.6468,3.94965 10.52376,3.94965 3.87696,0 7.61404,-1.40245 10.52376,-3.94865 22.07676,-19.3006 43.31416,-37.39355 62.06248,-53.3659 C 438.714,330.19655 511.6,268.1043 511.6,177.3508 511.6,93.34685 453.17768,30 375.70624,30 Z" style="fill:url(#linearGradient1706);fill-opacity:1;stroke-width:0.999053" />
+                            
+                                </svg>
+                        </div>
+
+                        <div class="announces__heart">
+                                <svg	version="1.1" class="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox=" -12  0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
+                                        xml:space="preserve">
+                                    <g>
+                                        <path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801
+                                                C0,67.584,54.202,29.761,121.041,29.761c40.262,0,75.827,19.745,97.841,49.976C240.899,49.506,276.47,29.761,316.722,29.761z"/>
+                                    </g>
+
+                                </svg>
+
+                        </div>
+                </div>
+                    </a>
+               </article>
+
+               <article>  
+                    <a href="delicedessens.html">
+                    
+
+                        <img src="img/delice_menu.jpg" alt=""> 
+                        <div class="announces">
+                                <div>
+                                    <h3 class="announces__description">Le délice des sens</h3>
+                                    <p class="announces__description">Folie-Méricourt</p>
+                                </div>
+
+                                <div class="announces__heart">
+                                        <svg version="1.1" class="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
+                            
+                                            <defs><linearGradient>
+                                            <stop style="stop-color:#ff79da;stop-opacity:1" offset="0"/>
+                                            <stop style="stop-color:#9356dc;stop-opacity:1" offset="1"/></linearGradient>
+                                            <linearGradient	xlink:href="#linearGradient1704" id="linearGradient1706" x1="210.70769" y1="425.35385" x2="512.98462" y2="1.9692308" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.99921875,0,0,0.99889381,0,0.03318585)" /></defs>
+                                            <path d="M 375.70624,30 C 347.94496,30 322.49284,38.79426 300.0584,56.139055 278.5502,72.76764 264.2304,93.947185 255.8,109.34815 247.3696,93.946185 233.0498,72.76764 211.5416,56.139055 189.10716,38.79426 163.65504,30 135.89376,30 58.42232,30 0,93.34685 0,177.3508 c 0,90.7535 72.886012,152.84575 183.22576,246.84465 18.73732,15.96335 39.97572,34.0573 62.05048,53.3549 2.90972,2.5472 6.6468,3.94965 10.52376,3.94965 3.87696,0 7.61404,-1.40245 10.52376,-3.94865 22.07676,-19.3006 43.31416,-37.39355 62.06248,-53.3659 C 438.714,330.19655 511.6,268.1043 511.6,177.3508 511.6,93.34685 453.17768,30 375.70624,30 Z" style="fill:url(#linearGradient1706);fill-opacity:1;stroke-width:0.999053" />
+                                    
+                                        </svg>
+                                </div>
+
+                                <div class="announces__heart">
+                                        <svg	version="1.1" class="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox=" -12 0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
+                                                xml:space="preserve">
+                                            <g>
+                                                <path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801
+                                                        C0,67.584,54.202,29.761,121.041,29.761c40.262,0,75.827,19.745,97.841,49.976C240.899,49.506,276.47,29.761,316.722,29.761z"/>
+                                            </g>
+
+                                        </svg>
+
+                                </div>
+                        </div>
+
+                    </a>
+                </article>
+                    
+            </div>        
+                    
                 </section>
             
         
@@ -81,11 +263,20 @@
 
     <footer>
 			
-        <p class="footer__heading"><a href="">ohmyfood</a></p>
-        <div><i class="fas fa-utensils footer__logo--fork"></i><p>Proposer un restaurant</p></div>
-        <div><i class="fas fa-hands-helping footer__logo--hands"></i><p>Devenir partenaire</p></div>
-        <div><p>Mentions légales</p></div>
-        <div><p>Contact</p></div>
+        <p class="footer__heading">
+            <a class="footer__heading--link" href="index.html">ohmyfood</a>
+        </p>
+        <div class="footer__content">
+            <div>
+                <i class="fas fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </div>
+            <div>
+                <i class="fas fa-hands-helping footer__logo--hands"></i>
+                <p>Devenir partenaire</p></div>
+            <div><p>Mentions légales</p></div>
+            <div><a href="mailto:ohmyfood@gmail.com">Contact</a></div>
+        </div>
 
     </footer>
 

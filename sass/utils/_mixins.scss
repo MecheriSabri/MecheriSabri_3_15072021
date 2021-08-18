@@ -1,51 +1,39 @@
 
-@mixin img-french { background:  url(../img/french_menu.jpg);
-                    padding-top: 510px;
-                    background-repeat: no-repeat; 
-                    background-size: cover; 
-                    width: 100%;
-                    height: 600px;
-                    font-family: $font-roboto;
-                    font-size: 40px;
+@mixin img-french { margin-top: -80px;
+                    height: 40vh;
+                    background: url(../img/french_menu.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 }
 
-
-@mixin img-delice { background:  url(../img/delice_menu.jpg);
-                    padding-top: 510px;
-                    background-repeat: no-repeat; 
-                    background-size: cover; 
-                    width: 100%;
-                    height: 600px;
-                    font-family: $font-roboto;
-                    font-size: 40px;
+@mixin img-delice { margin-top: -80px;
+                    height: 40vh;
+                    background: url(../img/delice_menu.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 }
 
-
-@mixin img-palette { background:  url(../img/palette_menu.jpg);
-                     padding-top: 510px;
-                     background-repeat: no-repeat; 
-                     background-size: cover; 
-                     width: 100%;
-                     height: 600px;
-                     font-family: $font-roboto;
-                     font-size: 40px;
+@mixin img-palette { margin-top: -80px;
+                    height: 40vh;
+                    background: url(../img/palette_menu.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 }
 
-
-@mixin img-note { background:  url(../img/note_menu.jpg) 80%;
-                  padding-top: 510px;
-                  background-repeat: no-repeat; 
-                  background-size: cover; 
-                  width: 100%;
-                  height: 600px;
-                  font-family: $font-roboto;
-                  font-size: 40px;
+@mixin img-note { margin-top: -80px;
+                  height: 40vh;
+                  background: url(../img/note_menu.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
 }
-                
-                  
-
 
 @mixin rules-styles($color:$color-grey){    width: 100%; 
-                                            padding: 0 5%;
+                                            padding: 0 30px;
                                             background: $color; 
 }
+
+

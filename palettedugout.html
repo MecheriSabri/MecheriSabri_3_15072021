@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	
@@ -19,14 +20,22 @@
 
 	<header>
 
-		<i class="fas fa-arrow-left header__arrow"></i>
-		<img src="img/ohmyfoodlogo.svg" alt="logo ohmyfood">
+		<!-- Back arrows -->
+		<div class="header__arrow">
+			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+		</div>
+
+		<!-- Logo -->
+		<a class="header__ohmyfood" href="index.html">
+			<img src="img/ohmyfoodlogo.svg" alt="logo ohmyfood">
+		</a>
 
 	</header>
 
+	<!-- Restaurants Images -->
+	<div class="img-palette"></div>
 
-
-	<main class="main-palette">
+	<main>
 			
 		<div class="div-content">
 				
@@ -36,7 +45,7 @@
 				<div class="headings__heart">
 				
 					<!-- Gradient heart -->
-					<svg width="80px" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
+					<svg version="1.1" class="Capa_1" x="0px" y="0px" viewBox="-10 0 580 512" style="enable-background:new 0 0 512 512;">
 					
 						<defs 	id="defs653"><linearGradient id="linearGradient1704">
 						<stop style="stop-color:#ff79da;stop-opacity:1" offset="0" id="stop1700" />
@@ -49,8 +58,10 @@
 			</div>
 
 			<div class="headings__heart">
-				<svg	fill="#ffff"	width="85px" color="white;"	version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 height="437.774px" viewBox=" -12  0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
+
+				<!-- White Heart -->
+				<svg	version="1.1" class="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox=" -12  0 475.775 437.774" style="enable-background:new 0 0 450.775 437.774;"
 						 xml:space="preserve">
 					<g>
 						<path d="M316.722,29.761c66.852,0,121.053,54.202,121.053,121.041c0,110.478-218.893,257.212-218.893,257.212S0,266.569,0,150.801
@@ -71,7 +82,7 @@
 
 <!-- Fricassée d'escargot  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation1">
 
 							<div class="dishes__content">
 				
@@ -95,7 +106,7 @@
 <!--  Foie gras au canard mi-cuit  -->
 
 				
-						<article class="dishes">
+						<article class="dishes dish-animation1">
 
 							<div class="dishes__content">
 
@@ -118,7 +129,7 @@
 
 <!--  Oeuf au plat  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation1">
 
 							<div class="dishes__content">
 
@@ -150,7 +161,7 @@
 
 <!--  Filet de boeuf aux herbes  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation2">
 
 							<div class="dishes__content">
 
@@ -176,7 +187,7 @@
 
 <!--  Parmentier de queue de boeuf	-->
 
-						<article class="dishes">
+						<article class="dishes dish-animation2">
 
 							<div class="dishes__content">
 
@@ -201,7 +212,7 @@
 
 <!--  Filet de Turbot  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation2">
 
 							<div class="dishes__content">
 
@@ -235,7 +246,7 @@
 
 <!--  Paris-Brest  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation3">
 
 							<div class="dishes__content">
 
@@ -259,7 +270,7 @@
 
 <!--  Macaron au chocolat d'exception  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation3">
 
 							<div class="dishes__content">
 
@@ -283,7 +294,7 @@
 
 <!--  Mousse au chocolat  -->
 
-						<article class="dishes">
+						<article class="dishes dish-animation3">
 
 							<div class="dishes__content">
 
@@ -307,7 +318,8 @@
 			</section>
 			
 		</div>
-			
+		
+		<!-- Button order -->	
 		<div class="div-button">
 			<button>Commander</button>
 		</div>
@@ -318,12 +330,21 @@
 
 		<footer>
 			
-			<p class="footer__heading"><a href="">ohmyfood</a></p>
-			<div><i class="fas fa-utensils footer__logo--fork"></i> <p>Proposer un restaurant</p></div>
-			<div><i class="fas fa-hands-helping footer__logo--hands"></i> <p>Devenir partenaire</p></div>
-			<div><p>Mentions légales</p></div>
-			<div><p>Contact</p></div>
-
+			<p class="footer__heading">
+				<a class="footer__heading--link" href="index.html">ohmyfood</a>
+			</p>
+			<div class="footer__content">
+				<div>
+					<i class="fas fa-utensils"></i>
+					<p>Proposer un restaurant</p>
+				</div>
+				<div>
+					<i class="fas fa-hands-helping footer__logo--hands"></i>
+					<p>Devenir partenaire</p></div>
+				<div><p>Mentions légales</p></div>
+				<div><a href="mailto:ohmyfood@gmail.com">Contact</a></div>
+			</div>
+	
 		</footer>
 
 	</main>
